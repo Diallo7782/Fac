@@ -1,0 +1,40 @@
+          EXERCICES:
+
+Question1:
+1  _ cat /etc/services
+   _ more /etc/services
+2  _ sort /etc/services
+3  _ sort /etc/services | more 
+4  _ head -15 /etc/services
+5  _ tail -15 /etc/services
+6  _ sort /etc/services | head -23 | tail -7
+
+Question2:
+1  _ ps -aux
+2  _ ps
+3  _ ps -aux | wc -l
+4  _ gedit&
+5  _ kill 2606
+6  _ (date; ls; ps) > liste.txt
+7  _ (date; echo "**********"; ls; echo "**********";  ps; echo "**********") > liste.txt 
+8  _ find /var ~/..
+9  _ (find /var ~/..) > liste
+10 _ (find /var ~/..) 2>  liste.log
+
+Question3:
+1- ls /home/l2info lic2info.txt
+2- grep a lic2info.txt
+3- grep -i '^a' lic2info.txt 
+4- grep '[^a]*a[^a]*a[^a]*'  lic2info.txt
+5- grep 'grep '\(a\|b\)'  lic2info.txt
+6- grep 'ab' lic2info.txt
+7- grep 'a.*b' lic2info.txt
+8- grep a lic2info.txt | grep b
+9- grep '\(.\).*\1.*\1' lic2info.txt
+10- grep '\([a-z]\)[a-z]*\1[a-z]*\1' lic2info.txt
+11-grep '\(.\)\1' lic2info.txt 
+12-grep -o '.\{3\}$' lic2info.txt
+13-grep -o '.\{3\}$' lic2info.txt | sort -u et grep -o '.\{3\}$' lic2info.txt | sort -u | wc -l
+14-sed -e's/\(^.*\)\(...$\)/\1 \2/g' lic2info.txt
+15-sed -e's/\(^.*\)\(...$\)/\1 \2/g' lic2info.txt | sort -t' ' -k2
+16-sed -e's/\(^.*\)\(...$\)/(\1)[\2]/g' lic2info.txt 

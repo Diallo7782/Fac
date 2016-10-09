@@ -1,0 +1,75 @@
+C-UNIX_tp1_exercice2
+Question1:
+1_  mkdir rep
+2_  cd rep 
+ _  mkdir rep1 rep2
+3_  cd rep2
+ _  mkdir rep3
+4_  cd ../rep1
+5_  touch toto
+6_  cd ../rep2/re3
+7_  touch toto
+8_  ls
+9_  ls -l
+10_ ls -l ../../rep1
+11_ cp toto ../../rep1/fich
+12_ ln ../../rep1/ fich pfich
+13_ ln -s ../../rep1/fich sfich
+14_ rm ../../rep1/fich
+ -Constat négatif: il se passe rien
+15_ rm pfich
+ -Constat négatif: il se passe rien
+16_ rm -r ../../../rep
+
+Question2:
+1_  cd /etc
+ _  ls
+ _  ls *conf
+2_  ls *.conf
+3_  ls -a .conf*
+4_  ls -d *a*
+5_  ls -d *tab*
+6_  ls -d ???
+7_  ls -d ???*
+8_  ls -d ? ?? ???
+
+Question3:
+  _ touch fich
+  _ chmod 751 fich
+   rwxr-x--x 
+   signifie:
+   -droit de lecture_ecriture_execution pour le propriétaire, lecture_execution pour le groupe et execution seule pour les autres.
+  _chmod 640 fich
+   rw-r-----
+   signifie:
+   -droit de lecture_ecriture pour le propriétaire, lecture pour le groupe et aucun pour les autres.
+  _chmod a+x fich
+   rwxr-x--x
+   -droit de lecture_ecriture_execution pour le propriétaire, lecture_execution pour le groupe et execution seule pour les autres.
+  _chmod o-x
+   rwxr-x--x
+   -droit de lecture_ecriture_execution pour le propriétaire, lecture_execution pour le groupe et execution seule pour les autres.
+
+Question4:
+1 _chmod g+x
+2 _mkdir tmp
+  _cd tmp
+  _touch f1 f2
+3 _ chmod 640 f1
+4 _chmod g+rw f2
+5 _  f1: Impossible de modifier le fichier
+     f2: modification autorisée pour le groupe
+
+Question5:
+La taille de la mémoire secondaire utilisée par l'ensemble des  fichiers 
+est: 28672 octets.
+
+Questions:
+Sachant  qu'un  bloc  contient  1024  octets,   fait en Ko et en Mo 
+Les 2000 fichiers occupent  2000*1024= 2048000 octets;
+                                       2048 Ko et
+                                       2,048 Mo.
+
+
+
+

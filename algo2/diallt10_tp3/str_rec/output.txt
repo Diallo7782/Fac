@@ -1,0 +1,33 @@
+# str_chr
+http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf
+                  |100
+# str_chr
+http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf
+*97
+# str_chr
+http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf
+                                                         |0
+# str_rchr
+http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf
+                                                       |100
+# str_rchr
+http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf
+*97
+# str_rchr
+http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf
+                                                         |0
+# str_pbrk
+http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf
+    |.:/
+# str_pbrk
+http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf
+                           |0123456789
+# str_pbrk
+http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf
+*abiklmquvxyz
+# str_spn
+http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf
+    |abcdefghijklmnopqrstuvwxyz
+# str_spn
+http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf
+|.:/
