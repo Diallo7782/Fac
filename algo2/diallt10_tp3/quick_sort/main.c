@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <ctype.h>
 #include "quick_sort.h"
-//compar les chaines!!!
+//comparaison des chaines!!!
 int int_compar(const int *x1, const int *x2);
 
 #define LENGTH  25
